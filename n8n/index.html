@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ68XH38X6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KJ68XH38X6');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soham's Portfolio | N8N</title>
+    <link rel="icon" href="../assets/sohamxyz_transparent.png" type="image/png" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">SohamXYZ</div>
+    <nav>
+      <a href="#about" class="navItem" id="about">About</a>
+      <a href="#projects" class="navItem">Projects</a>
+      <a href="#contact" class="navItem">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container-hero-text">
+        <div class="little-hero-text">
+      <h3>n8n&nbsp&nbspA U T O M A T I O N</h3>
+    </div>
+    <div class="hero-text">
+        <div class="h1-class">
+      <h1>n8n</h1><br><h1>Automation</h1><br><h1>Developer</h1>
+        </div>
+      <p>I build automated workflows for companies using n8n to streamline processes and enhance productivity.</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+    </div>
+    <div class="hero-3d" id="hero-3d">
+        <img src="../assets/n8n.png" alt="3D Model" class="hero-3d-image">
+    </div>
+  </section>
+  <section class="projects" id="projects">
+    <h2 class="projects-title">My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('../assets/n8n.png');"></div>
+        <div class="project-content">
+          <h3>High Value Lead Generation + Automation</h3>
+          <p>Automated leads/clients generated from Reddit along with integrated AI Evaluation, and conversation-starters</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('../assets/n8n.png');"></div>
+        <div class="project-content">
+          <h3>Automated Google Sheets Management</h3>
+          <p>Management of high value data in complex google sheets through n8n automation workflows</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('../assets/n8n.png');"></div>
+        <div class="project-content">
+          <h3>Integrated AI Help Agent into Website</h3>
+          <p>Seamless integration of Large Language AI Chat Models into existing websites of companies to enhance user satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ...existing code... -->
+  <section class="contact" id="contact">
+    <h2 class="contact-title">Contact Me to learn more about my work/specific projects!</h2>
+    <div class="contact-links">
+      <a href="mailto:sohamofficial00@gmail.com" class="contact-link" id="email" target="_blank">
+        <span class="contact-label">Email:</span> sohamofficial00@gmail.com
+      </a>
+      <button type="button" class="contact-link" id="discord-copy" style="border:none;background:#191a1d;">
+        <span class="contact-label">Discord:</span> <span id="discord-username">sohamxyz</span>
+      </button>
+      <a href="https://www.linkedin.com/in/sohammitradev" class="contact-link" target="_blank">
+        <span class="contact-label">LinkedIn:</span> sohammitradev
+      </a>
+      <a href="https://twitter.com/sohamxyz" class="contact-link" target="_blank">
+        <span class="contact-label">Twitter:</span> sohamxyz
+      </a>
+    </div>
+  </section>
+  
+  <footer>
+    © 2025 SohamXYZ — All rights reserved.
+    <p style="font-size:0.8em; text-align:center; margin-top:2em;">
+        This site uses anonymous cookies for analytics.  
+        <a href="../privacy.html" target="_blank" style="color:whitesmoke; text-decoration:none;">Privacy Policy</a>
+    </p>
+  </footer>
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-image"></div>
+      <div class="modal-details">
+        <h3 class="modal-title"></h3>
+        <p class="modal-description"></p>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const discordBtn = document.getElementById('discord-copy');
+  const discordUsername = document.getElementById('discord-username').textContent;
+  discordBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(discordUsername);
+    discordBtn.innerHTML = '<span class="contact-label">Discord:</span> Copied!';
+    setTimeout(() => {
+      discordBtn.innerHTML = '<span class="contact-label">Discord:</span> <span id="discord-username">sohamxyz</span>';
+    }, 1200);
+  });
+});
+</script>
+</body>
+</html>
