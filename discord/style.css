@@ -22,6 +22,7 @@ body {
     color: #FFFFFF;
     margin-inline: 15%;
     overflow-x: hidden;
+    animation: fadeSlideIn 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 header {
@@ -71,6 +72,8 @@ nav a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 4rem 2rem;
+    opacity: 0;
+    animation: fadeSlideIn 1s cubic-bezier(0.23, 1, 0.32, 1) 0.2s forwards;
 }
 
 .h1-class {
@@ -153,6 +156,8 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     color: #666;
+    opacity: 0;
+    animation: fadeSlideIn 1s cubic-bezier(0.23, 1, 0.32, 1) 0.8s forwards;
 }
 
 
@@ -256,6 +261,16 @@ footer {
 @keyframes cardFadeIn {
     to { opacity: 1; transform: translateY(0);}
 }
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* Responsive tweaks */
 @media (max-width: 900px) {
@@ -287,6 +302,8 @@ footer {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
+    animation: fadeSlideIn 1s cubic-bezier(0.23, 1, 0.32, 1) 0.8s forwards;
 }
 
 .contact-title {

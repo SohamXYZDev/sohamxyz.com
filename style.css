@@ -13,6 +13,7 @@ body {
     margin-inline: 15%;
     overflow-x: hidden;
     text-align: center;
+    animation: fadeSlideIn 0.8s cubic-bezier(0.23, 1, 0.32, 1);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,6 +24,8 @@ h1 {
     user-select: none;
     font-weight: lighter;
     font-size: 2rem;
+    opacity: 0;
+    animation: fadeSlideIn 1s cubic-bezier(0.23, 1, 0.32, 1) 0.2s forwards;
 }
 
 .buttons_cont {
@@ -31,6 +34,8 @@ h1 {
     align-items: center;
     margin-top: 50px;
     gap: 50px;
+    opacity: 0;
+    animation: fadeSlideIn 1s cubic-bezier(0.23, 1, 0.32, 1) 0.5s forwards;
 }
 
 
@@ -63,11 +68,23 @@ h1 {
     transition: all 0.3s ease;
 }
 
-
 footer {
     padding: 2rem;
     text-align: center;
     font-size: 0.9rem;
     color: #666;
+    opacity: 0;
+    animation: fadeSlideIn 1s cubic-bezier(0.23, 1, 0.32, 1) 0.8s forwards;
     margin-top: auto;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
