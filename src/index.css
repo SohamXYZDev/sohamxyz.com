@@ -1,0 +1,142 @@
+/* ══════════════════════════════════════════════════════
+   SOHAMXYZ PORTFOLIO V4 — GLOBAL STYLES & TOKENS
+══════════════════════════════════════════════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg:         #08080e;
+  --bg-2:       #0e0e18;
+  --bg-3:       #12121e;
+  --surface:    rgba(255,255,255,0.04);
+  --surface-2:  rgba(255,255,255,0.07);
+  --border:     rgba(255,255,255,0.07);
+  --border-2:   rgba(255,255,255,0.13);
+  --text:       #eeeef5;
+  --text-2:     #9898b8;
+  --text-3:     #5a5a7a;
+  --accent:     #7c6efc;
+  --accent-2:   #a78bfa;
+  --accent-gl:  rgba(124,110,252,0.28);
+  --red:        #ff4500;
+  --red-2:      #ff6935;
+  --red-gl:     rgba(255,69,0,0.22);
+  --gold:       #f59e0b;
+  --green:      #22c55e;
+  --font:       'Inter', system-ui, sans-serif;
+  --mono:       'JetBrains Mono', monospace;
+  --nav-h:      64px;
+  --ease:       cubic-bezier(0.23, 1, 0.32, 1);
+  --r-sm:       10px;
+  --r-md:       16px;
+  --r-lg:       24px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: inherit; text-decoration: none; }
+img, svg { display: block; max-width: 100%; }
+button { cursor: pointer; border: none; background: none; font-family: var(--font); }
+ul { list-style: none; }
+
+/* ── UTILS ─────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 5vw, 2.5rem);
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  font-family: var(--mono);
+  margin-bottom: 0.9rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  margin-bottom: 1.25rem;
+}
+
+.section-sub {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  color: var(--text-2);
+  line-height: 1.75;
+  max-width: 560px;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #7c6efc 0%, #a78bfa 50%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-red {
+  background: linear-gradient(135deg, #ff4500 0%, #ff6935 60%, #ffaa5e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── BUTTONS ───────────────────────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.8rem 1.6rem;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.92rem;
+  border-radius: var(--r-sm);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s, opacity 0.2s;
+  box-shadow: 0 0 28px var(--accent-gl);
+  white-space: nowrap;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 44px var(--accent-gl); opacity: 0.9; }
+.btn-primary.red  { background: var(--red); box-shadow: 0 0 28px var(--red-gl); }
+.btn-primary.red:hover { box-shadow: 0 0 48px var(--red-gl); opacity: 0.9; }
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.8rem 1.6rem;
+  background: var(--surface);
+  border: 1px solid var(--border-2);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.92rem;
+  border-radius: var(--r-sm);
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+.btn-ghost:hover { background: var(--surface-2); border-color: rgba(255,255,255,0.22); transform: translateY(-2px); }
+
+/* ── SCROLLBAR ─────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-3); }
