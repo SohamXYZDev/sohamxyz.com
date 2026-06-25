@@ -499,10 +499,10 @@ section { padding: clamp(5rem, 10vw, 8rem) 0; }
   #hero::before {
     content: ''; position: absolute;
     top: 5%; left: 50%; transform: translateX(-50%);
-    width: 200vw; height: 200vw;
-    background: radial-gradient(circle, rgba(124,110,252,0.8) 0%, rgba(124,110,252,0.3) 30%, transparent 70%);
+    width: 160vw; height: 160vw;
+    background: radial-gradient(circle, rgba(124,110,252,0.45) 0%, transparent 65%);
     z-index: 0; pointer-events: none;
-    border-radius: 50%; filter: blur(40px); opacity: 1;
+    border-radius: 50%; filter: blur(50px); opacity: 0.85;
   }
   .hero-container { grid-template-columns: 1fr; text-align: center; }
   .hero-actions { justify-content: center; }
