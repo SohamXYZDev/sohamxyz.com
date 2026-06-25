@@ -495,7 +495,7 @@ section { padding: clamp(5rem, 10vw, 8rem) 0; }
   .hero-container { grid-template-columns: 1fr; text-align: center; }
   .hero-actions { justify-content: center; }
   .hero-stats { justify-content: center; }
-  .hero-visual { height: 350px; margin-top: 2rem; }
+  .hero-visual { display: none; }
   .hero-scroll-hint { display: none; }
   .about-grid, .reddleads-grid, .contact-grid { grid-template-columns: 1fr; }
   .reddleads-mockup { order: -1; } /* Mockup above text on mobile */
@@ -508,9 +508,7 @@ section { padding: clamp(5rem, 10vw, 8rem) 0; }
   .nav-links, .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
   .projects-grid { grid-template-columns: 1fr; }
-  .stat-divider { display: none; }
-  .hero-stats { flex-direction: column; gap: 1.5rem; align-items: center; }
-  .stat-item { align-items: center; text-align: center; }
+  .hero-stats { justify-content: center; gap: 1rem; }
   .testimonial-strip { grid-template-columns: 1fr; }
   .about-timeline::before { display: none; }
   .timeline-item { grid-template-columns: 55px 1fr; padding-left: 0; }
