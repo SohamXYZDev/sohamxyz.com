@@ -459,6 +459,9 @@ section { padding: clamp(5rem, 10vw, 8rem) 0; }
 .marquee-inner { display: flex; gap: 1rem; width: max-content; animation: marquee 35s linear infinite; }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .marquee-outer:hover .marquee-inner { animation-play-state: paused; }
+.testimonial-card { transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s !important; }
+.testimonial-card:hover { transform: translateY(-5px); border-color: var(--accent) !important; box-shadow: 0 15px 35px rgba(124, 110, 252, 0.15) !important; }
+.testimonial-card:hover .view-reviews-btn span { color: var(--accent-2); }
 .tech-item { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; font-size: 0.875rem; font-weight: 500; color: var(--text-2); white-space: nowrap; transition: border-color 0.2s, color 0.2s; }
 .tech-item:hover { color: var(--text); border-color: var(--border-2); }
 .tech-icon { display: flex; align-items: center; justify-content: center; }
