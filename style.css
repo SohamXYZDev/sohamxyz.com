@@ -163,7 +163,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: var(--nav-h);
+  padding-top: calc(var(--nav-h) + 6vh);
 }
 .hero-container {
   display: grid;
