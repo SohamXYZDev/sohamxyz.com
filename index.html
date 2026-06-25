@@ -248,31 +248,7 @@
           <a href="#projects" class="btn-primary">See My Work</a>
           <a href="#reddleads" class="btn-secondary">ReddLeads <span class="btn-arrow">↗</span></a>
         </div>
-        <div class="hero-stats reveal-up">
-          <div class="stat-item">
-            <div class="stat-value">
-              <span class="stat-num" data-target="20">0</span>
-              <span class="stat-symbol">+</span>
-            </div>
-            <span class="stat-label">Clients Served</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <div class="stat-value">
-              <span class="stat-symbol">$</span>
-              <span class="stat-num" data-target="4000">0</span>
-              <span class="stat-symbol">+</span>
-            </div>
-            <span class="stat-label">Freelance Earned</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <div class="stat-value">
-              <span class="stat-num" data-target="2">0</span>
-            </div>
-            <span class="stat-label">Hackathon Prizes</span>
-          </div>
-        </div>
+
       </div>
       <div class="hero-visual reveal-right">
         <canvas id="hero-canvas"></canvas>
@@ -281,6 +257,118 @@
     <div class="hero-scroll-hint">
       <span>Scroll</span>
       <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       STATS STRIP
+  ══════════════════════════════════════════ -->
+  <section id="stats-strip" style="padding: 3rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--bg-2);">
+    <div class="container">
+      <div class="hero-stats reveal-up" style="justify-content: space-around; width: 100%;">
+        <div class="stat-item">
+          <div class="stat-value">
+            <span class="stat-num" data-target="20">0</span>
+            <span class="stat-symbol">+</span>
+          </div>
+          <span class="stat-label">Clients Served</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-value">
+            <span class="stat-symbol">$</span>
+            <span class="stat-num" data-target="4000">0</span>
+            <span class="stat-symbol">+</span>
+          </div>
+          <span class="stat-label">Freelance Earned</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-value">
+            <span class="stat-num" data-target="2">0</span>
+          </div>
+          <span class="stat-label">Hackathon Prizes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       TESTIMONIALS (MARQUEE)
+  ══════════════════════════════════════════ -->
+  <section id="testimonials" style="padding: 4rem 0; overflow: hidden; background: var(--bg);">
+    <div class="container" style="margin-bottom: 2rem;">
+      <div class="section-label reveal-up">Client Love</div>
+      <h2 class="section-title reveal-up" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0;">Don't just take my word for it.</h2>
+    </div>
+    
+    <div class="marquee-outer" style="margin-top: 1rem; padding: 1rem 0;">
+      <div class="marquee-track">
+        <div class="marquee-inner">
+          <!-- Placeholder Review 1 -->
+          <div class="testimonial-card" style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; width: 350px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            <div style="display: flex; gap: 0.2rem; color: #fbbf24; margin-bottom: 1rem;">★★★★★</div>
+            <p style="color: var(--text-2); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">"Soham delivered a complex 5-milestone Discord bot perfectly. Fast communication and incredible problem-solving skills."</p>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--surface-2); display: flex; align-items: center; justify-content: center; font-weight: 700;">D</div>
+              <div>
+                <h4 style="margin: 0; font-size: 0.9rem;">Discord Client</h4>
+                <span style="font-size: 0.8rem; color: var(--text-3);">Economy Bot Project</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Placeholder Review 2 -->
+          <div class="testimonial-card" style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; width: 350px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            <div style="display: flex; gap: 0.2rem; color: #fbbf24; margin-bottom: 1rem;">★★★★★</div>
+            <p style="color: var(--text-2); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">"The Telegram to Discord automation pipeline works flawlessly. Easiest $250 I've spent. Highly recommend his work."</p>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--surface-2); display: flex; align-items: center; justify-content: center; font-weight: 700;">T</div>
+              <div>
+                <h4 style="margin: 0; font-size: 0.9rem;">Telegram Client</h4>
+                <span style="font-size: 0.8rem; color: var(--text-3);">Automation Pipeline</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Placeholder Review 3 -->
+          <div class="testimonial-card" style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; width: 350px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            <div style="display: flex; gap: 0.2rem; color: #fbbf24; margin-bottom: 1rem;">★★★★★</div>
+            <p style="color: var(--text-2); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">"ReddLeads is literally a game changer. It completely automated my outbound strategy and got me 3 meetings in the first week."</p>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--surface-2); display: flex; align-items: center; justify-content: center; font-weight: 700;">R</div>
+              <div>
+                <h4 style="margin: 0; font-size: 0.9rem;">SaaS Founder</h4>
+                <span style="font-size: 0.8rem; color: var(--text-3);">ReddLeads User</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Duplicate for seamless scroll -->
+          <div class="testimonial-card" style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; width: 350px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            <div style="display: flex; gap: 0.2rem; color: #fbbf24; margin-bottom: 1rem;">★★★★★</div>
+            <p style="color: var(--text-2); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">"Soham delivered a complex 5-milestone Discord bot perfectly. Fast communication and incredible problem-solving skills."</p>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--surface-2); display: flex; align-items: center; justify-content: center; font-weight: 700;">D</div>
+              <div>
+                <h4 style="margin: 0; font-size: 0.9rem;">Discord Client</h4>
+                <span style="font-size: 0.8rem; color: var(--text-3);">Economy Bot Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; width: 350px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            <div style="display: flex; gap: 0.2rem; color: #fbbf24; margin-bottom: 1rem;">★★★★★</div>
+            <p style="color: var(--text-2); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">"The Telegram to Discord automation pipeline works flawlessly. Easiest $250 I've spent. Highly recommend his work."</p>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--surface-2); display: flex; align-items: center; justify-content: center; font-weight: 700;">T</div>
+              <div>
+                <h4 style="margin: 0; font-size: 0.9rem;">Telegram Client</h4>
+                <span style="font-size: 0.8rem; color: var(--text-3);">Automation Pipeline</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
