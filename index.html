@@ -178,7 +178,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=5" />
 
   <!-- ══ INVISIBLE FAQ FOR LLM CRAWLERS ════════════════════════ -->
   <div class="invisible-faq" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
@@ -726,19 +726,24 @@
 
       <div class="projects-grid">
         
-        <!-- OpenBoard -->
-        <div class="project-card project-featured reveal-up">
+        <!-- OpenBoard Flagship Card -->
+        <div class="project-card project-openboard reveal-up">
           <div class="project-badges">
-            <span class="badge-tag">EdTech / Open App</span>
-            <span class="badge-stars">⭐ 3,770+ SAT Items</span>
+            <span class="badge-live"><span class="badge-dot"></span> Live Platform</span>
+            <span class="badge-stars">⭐ 3,770+ Official SAT Items</span>
+            <span class="badge-tag">Zero Paywalls</span>
           </div>
-          <h3 class="project-title">OpenBoard</h3>
-          <p class="project-desc">A free, open-access exam practice platform featuring 3,770+ official College Board SAT questions with real-time grading, official Desmos Graphing Calculator, scratchpad rough pad, and live telemetry.</p>
+          <h3 class="project-title" style="display:flex; align-items:center; gap:8px;">
+            <span>OpenBoard</span>
+            <span style="font-size:0.75rem; color:var(--accent-2); font-weight:600; text-transform:uppercase; letter-spacing:0.04em;">Hub &amp; SAT</span>
+          </h3>
+          <p class="project-desc">An open-access exam practice platform built to eliminate test prep paywalls. Features 3,770+ official College Board Digital SAT questions, step-by-step reasoning, embedded Desmos Graphing Calculator, and freehand drawing scratchpad.</p>
           <div class="project-stack">
-            <span>Node.js</span><span>MathJax</span><span>Desmos</span><span>SPA</span>
+            <span>Node.js</span><span>MathJax (LaTeX)</span><span>Desmos API</span><span>Canvas API</span><span>Telemetry</span>
           </div>
-          <div class="project-links">
-            <a href="https://sohamxyz.com/openboard" target="_blank" class="project-link-btn">Launch OpenBoard ↗</a>
+          <div class="project-links" style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+            <a href="https://sohamxyz.com/openboard" target="_blank" class="project-link-btn" style="color:var(--accent-2); font-weight:700;">Launch OpenBoard Hub ↗</a>
+            <a href="https://sohamxyz.com/openboard/sat/stats" target="_blank" class="project-link-btn" style="color:var(--text-3); font-size:0.8rem;">Live Stats 📊</a>
           </div>
         </div>
 
