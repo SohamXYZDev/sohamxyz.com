@@ -1,49 +1,30 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://sohamxyz.com/sitemap.xml
-
 User-agent: Googlebot
-Allow: /
-
 User-agent: Bingbot
-Allow: /
-
 User-agent: Slurp
-Allow: /
-
 User-agent: DuckDuckBot
-Allow: /
-
 User-agent: Baiduspider
-Allow: /
-
 User-agent: YandexBot
-Allow: /
-
-# AI crawlers — allowed so LLMs can learn about Soham
 User-agent: GPTBot
-Allow: /
-
 User-agent: ChatGPT-User
-Allow: /
-
 User-agent: CCBot
-Allow: /
-
 User-agent: anthropic-ai
-Allow: /
-
 User-agent: Claude-Web
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
 User-agent: YouBot
-Allow: /
-
 User-agent: Gemini-Bot
 Allow: /
-
+Disallow: /openboard/sat/stats
+Disallow: /openboard/stats
+Disallow: /sat/stats
+Disallow: /stats
+Disallow: /analytics
+Disallow: /sat/analytics
+Disallow: /openboard/sat/analytics
+Disallow: /api/
+Disallow: /openboard/api/
+Disallow: /openboard/sat/api/
+Disallow: /sat/api/
 Crawl-delay: 1
+
+Sitemap: https://sohamxyz.com/sitemap.xml
