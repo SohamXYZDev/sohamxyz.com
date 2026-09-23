@@ -44,11 +44,19 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- OpenBoard - Exam Practice Platform Hub -->
+    <url>
+        <loc>https://sohamxyz.com/openboard</loc>
+        <lastmod>2026-09-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
     <!-- OpenBoard - SAT Question Bank Web App -->
     <url>
         <loc>https://sohamxyz.com/openboard/sat</loc>
         <lastmod>2026-09-23</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.95</priority>
+        <priority>0.90</priority>
     </url>
 </urlset>
